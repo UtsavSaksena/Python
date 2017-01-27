@@ -140,7 +140,7 @@ As additional covariates we use 'Absolute value of lattitude from equator' (to c
 <H3> Data Analysis </H3>
 
 <P>
-In this section, we show main graphs and descriptive statis
+In this section, we show some graphs and descriptive statistics. The data has observations from 64 countries. 
 </P>
 ```python
 import pandas as pd
@@ -289,6 +289,14 @@ These variables can be explained as follows -
     </tbody>
 </Table>
 
+<H2> Descriptive Statistics of main variable </H2>
+
+```python
+df=pd.read_stata('data_graph.dta')
+df.describe() 
+```
+The Output can be seen <A href="https://github.com/UtsavSaksena/Python/blob/master/Desc%20stats.png">here </A> - 
+ 
 
 ```python
 plt.clf () # starts a new graph
