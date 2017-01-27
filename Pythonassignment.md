@@ -127,8 +127,7 @@ The authors make use of the following assumptions in their estimations -
 
 <H3> Estimation Equation </H3>
 
-<iframe> http://mathurl.com/hra3yxt </iframe>
-
+<img src="http://mathurl.com/hra3yxt.png"> 
 
 
 ```python
