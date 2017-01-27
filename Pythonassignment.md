@@ -34,13 +34,13 @@ The authors make use of the following assumptions in their estimations -
     <OL>
         <LI> Stark difference in policies used by the colonizers – 
              <OL type="a">
-                     <LI> Setting up of extractive states which not did provide protection for private property or checks against                                 government expropriation and set up for transfer resources from the colony to the ‘home’ state
-                     <LI> Settler of ‘Neo-Europes’ (Alfred Crosby, 1986) placed a strong emphasis on private property and checks                                against excessive government power
+                     <LI> Setting up of extractive states which not did provide protection for private property or checks against                                 government expropriation and set up for transfer resources from the colony to the ‘home’ state </LI>
+                     <LI> Settler of ‘Neo-Europes’ (<a href="https://books.google.nl/books/about/Ecological_Imperialism.html?                                     id=Phtqa_3tNykC&redir_esc=y">Alfred Crosby, 1986</a>) placed a strong emphasis on private property and checks                           against excessive government power </LI>
              </OL>
-        <LI> Colonialization policies were determined by feasibility of settlements 
-        <LI> Colonial states and institutions persisted after independence of countries 
+        <LI> Colonialization policies were determined by feasibility of settlements </LI>
+        <LI> Colonial states and institutions persisted after independence of countries </LI>
         <LI> Exclusion restriction: Current economic performance does not in any way affected by mortality rates of colonists other     
-           than by way of setting up (and prevalence) of economic institutions
+           than by way of setting up (and prevalence) of economic institutions </LI>
     </OL>       
 </P>
 
