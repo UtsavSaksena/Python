@@ -295,9 +295,8 @@ These variables can be explained as follows -
 df=pd.read_stata('data_graph.dta')
 df.describe() 
 ```
-The Output can be seen <A href="https://github.com/UtsavSaksena/Python/blob/master/Desc%20stats.png">here</A>.
+<P> The Output can be seen <A href="https://github.com/UtsavSaksena/Python/blob/master/Desc%20stats.png">here</A>. </P>
  
-#EXPLAIN TABLE 
 
 ```python
 plt.clf () # starts a new graph
@@ -310,9 +309,8 @@ plt.xlim(0, 10)
     # add lfit and distinguish the dotted line by the characteristic of colonization
 plt.savefig('Graph_10.png')
 ```
-#EXPLAIN GRAPHSSS
 
-<a href="https://github.com/UtsavSaksena/Python/blob/master/Graph10.png"> Click here to view </a>
+<P> <a href="https://github.com/UtsavSaksena/Python/blob/master/Graph10.png"> Click here to view </a> </P>
 
 ```python
 plt.clf () # starts a new graph
@@ -325,7 +323,7 @@ plt.xlim(0, 8)
     # add lfit and distinguish the dotted line by the characteristic of colonization
 plt.savefig('Graph_20.png')
 ```
-<a href="https://github.com/UtsavSaksena/Python/blob/master/Graph20.png"> Click here to view </a>
+<P><a href="https://github.com/UtsavSaksena/Python/blob/master/Graph20.png"> Click here to view </a> </P>
 
 ```python
 from plotly.offline import plot
