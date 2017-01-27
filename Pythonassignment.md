@@ -256,19 +256,39 @@ df.head()
 <P>  
 These variables can be explained as follows - 
 
-<Table>
+<Table border="1" type="dataframe">
      <tbody>
           <tr>
-               <td> Code </td>
-               <td> Description </td>
+               <td> <b> No. </b> </td>
+               <td> <b> Code </b> </td>
+               <td> <b> Description </b> </td>
            </tr> 
            <tr>
+               <td> 1 </td>
                <td> logpgp95 </td>
-               <td> Average Risk of Appropriation </td>
+               <td> GDP per capita in 1995 </td>
            </tr> 
-   
-
-     </tbody>
+           <tr>
+               <td> 2 </td>
+               <td> avexpr </td>
+               <td> Average risk of expropriation
+           </tr>
+           <tr> 
+               <td> 3 </td> 
+               <td> lat_abst </td>
+               <td> Absolute value of latitude from equator </td>
+           </tr>   
+           <tr>
+               <td> 4 </td>
+               <td> logem4 </td>
+               <td> Mortality rate of settlers when colonised </td>
+           </tr>
+           <tr>
+               <td> 5 </td>
+               <td> extmort4 </td>    
+               <td> Log European settler mortality </td>
+           </tr>
+    </tbody>
 </Table>
 
 
