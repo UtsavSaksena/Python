@@ -142,6 +142,7 @@ plt.xlim(0, 10)
 plt.savefig('Graph_10.png')
 ```
 
+<a href="https://github.com/UtsavSaksena/Python/blob/master/Graph10.png"> Click here to view </a>
 
 ```python
 plt.clf () # starts a new graph
@@ -154,6 +155,36 @@ plt.xlim(0, 8)
     # add lfit and distinguish the dotted line by the characteristic of colonization
 plt.savefig('Graph_20.png')
 ```
+<a href="https://github.com/UtsavSaksena/Python/blob/master/Graph20.png"> Click here to view </a>
+
+
+
+```python
+
+from plotly.offline import plot
+import plotly.graph_objs as go
+import plotly.plotly as py
+from plotly.graph_objs import Scatter, Layout
+df_graph=pd.read_stata('data_graph.dta')
+
+plotly.offline.init_notebook_mode()
+
+plotly.offline.iplot({
+"data": [Scatter(
+   x=df_graph['loggdp95'],
+   y=df_graph['avexpr'],
+   text=country_names,
+   mode='markers'
+)],
+"layout": Layout(
+    title='Average protection against expropriation risk vs GDP per capita 1995',
+    xaxis=XAxis( type='log', title='GPD per capita, 1995' ),
+    yaxis=YAxis( title='Average protection against expropriation risk' ),
+)
+})
+
+```
+<a href="https://plot.ly/~Lhagva_1995/5/"> Click here to view an interactive scatter plot </a>
 
 
 ```python
