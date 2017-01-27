@@ -295,8 +295,9 @@ These variables can be explained as follows -
 df=pd.read_stata('data_graph.dta')
 df.describe() 
 ```
-The Output can be seen <A href="https://github.com/UtsavSaksena/Python/blob/master/Desc%20stats.png">here </A> - 
+The Output can be seen <A href="https://github.com/UtsavSaksena/Python/blob/master/Desc%20stats.png">here</A>.
  
+#EXPLAIN TABLE 
 
 ```python
 plt.clf () # starts a new graph
@@ -309,6 +310,7 @@ plt.xlim(0, 10)
     # add lfit and distinguish the dotted line by the characteristic of colonization
 plt.savefig('Graph_10.png')
 ```
+#EXPLAIN GRAPHSSS
 
 <a href="https://github.com/UtsavSaksena/Python/blob/master/Graph10.png"> Click here to view </a>
 
@@ -381,8 +383,20 @@ reg1
          intercept     4.7135     0.3695      12.76     0.0000     3.9892     5.4377
     ---------------------------------End of Summary---------------------------------
 
+<P>
+As we can perceive from the regression table, the coefficient for the variable avexpr is positive.
+For this model the interpretation of this result is as follows;
+For a unitary increase on average protection against expropriation risk we see that the GDP per
+capita increases by approximately 67%. Even though we see that the average protection against
+expropriation risk is statistically highly significant - to support this we have the high t-statistic
+result and the p-value is zero - we can also say that the results we have obtained in this
+regression are somewhat overestimated. This overestimation is due to the fact that there are
+omitted variables that are relevant for our analysis.
+</P>
+
+
 ```python
-# Run regression: logpgp95 avexpr
+# Run regression: avexpr logem4
 df=pd.read_stata('data_python.dta')
 reg2=ols(y=df['avexpr'], x=df['logem4'])
 reg2
@@ -412,8 +426,18 @@ reg2
          intercept     9.5146     0.5481      17.36     0.0000     8.4403    10.5889
     ---------------------------------End of Summary---------------------------------
 
+<P>
+From the regression above we see that the coefficient is negative. What this means is that, for a 1%
+increase in European Settler mortality rate the average protections against expropriation risk fall
+by approximately 0,63 units. In this situation we should also look at the value given by the 
+R-Square: that 30% of the variation on the average protection against expropriation risk is
+explained by the variable logem4 (European Settler's mortality rate). All in all we have that this
+instrument is sufficiently strong
+</P>
 
-
+<P>
+Now we estimate the 2SLS in which we take the fitted values of the variable <I> avexpr </I> and run a regression according to equation (2).
+</P>
 
 ```python
 # Keeping predicted value
