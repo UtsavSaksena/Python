@@ -1,6 +1,13 @@
 <H1> Applied Economic Analysis - Python Assignment </H1>
 <H2> Topic: Historical Origins of Economic Development </H2>
 
+By - <Br>
+<a href="https://github.com/Lkhagvaa-1995"> Lkhagvaa Erdurensen (u810977) </a> <BR>
+<a href="https://github.com/UtsavSaksena"> Utsav Saksena (u629797) </a>
+
+<H3>Abstract and Introduction: </H3>
+<P> </P>
+
 
 
 
