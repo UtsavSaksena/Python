@@ -18,7 +18,7 @@ The economic theory that underlies this model is as follows -  ‘good’ politi
 </P>
 
 
-<H3>Methodology: <H3> 
+<H3>Methodology: </H3> 
 <P>
 In the paper, the authors exploit differences in European mortality rates to estimate the effect of institutions on current economic performance. The ‘chain of causality’ is defined as follows - 
 </P>
