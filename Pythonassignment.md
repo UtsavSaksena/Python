@@ -283,10 +283,7 @@ plt.savefig('Graph_20.png')
 ```
 <a href="https://github.com/UtsavSaksena/Python/blob/master/Graph20.png"> Click here to view </a>
 
-
-
 ```python
-
 from plotly.offline import plot
 import plotly.graph_objs as go
 import plotly.plotly as py
@@ -308,10 +305,9 @@ plotly.offline.iplot({
     yaxis=YAxis( title='Average protection against expropriation risk' ),
 )
 })
-
 ```
-<a href="https://plot.ly/~Lhagva_1995/5/"> Click here to view an interactive scatter plot </a>
 
+<a href="https://plot.ly/~Lhagva_1995/5/"> Click here to view an interactive scatter plot </a>
 
 ```python
 # Run regression: logpgp95 avexpr
@@ -319,10 +315,6 @@ from pandas.stats.api import ols
 reg1=ols(y=df['logpgp95'], x=df['avexpr'])
 reg1
 ```
-
-
-
-
     
     -------------------------Summary of Regression Analysis-------------------------
     
@@ -347,23 +339,12 @@ reg1
          intercept     4.7135     0.3695      12.76     0.0000     3.9892     5.4377
     ---------------------------------End of Summary---------------------------------
 
-
-
-
-```python
-
-```
-
-
 ```python
 # Run regression: logpgp95 avexpr
 df=pd.read_stata('data_python.dta')
 reg2=ols(y=df['avexpr'], x=df['logem4'])
 reg2
 ```
-
-
-
 
     
     -------------------------Summary of Regression Analysis-------------------------
@@ -399,10 +380,6 @@ averpx_hat=9.5146-0.6314*df['logem4']
 reg3=ols(y=df['logpgp95'], x=averpx_hat)
 reg3
 ```
-
-
-
-
     
     -------------------------Summary of Regression Analysis-------------------------
     
@@ -426,65 +403,6 @@ reg3
                  x     0.8684     0.1067       8.14     0.0000     0.6593     1.0775
          intercept     2.3698     0.7148       3.32     0.0015     0.9687     3.7708
     ---------------------------------End of Summary---------------------------------
-
-
-
-
-```python
-
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
 
 ```python
 import numpy as np
@@ -564,14 +482,4 @@ print(lm.summary())
     [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
     [2] The condition number is large, 8.48e+03. This might indicate that there are
     strong multicollinearity or other numerical problems.
-    
-
-
-```python
-
-```
-
-
-
-
-
+  
