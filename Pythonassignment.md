@@ -28,6 +28,21 @@ To test this hypothesis empirically, they use the instrumental variable approach
 In our representation, we seek to test the validity of the use of this variable as an instrument. We do so by way of several ‘naive’ tests and representations. 
 </P>
 
+<H3>Assumptions: </H3> 
+<P>
+The authors make use of the following assumptions in their estimations - 
+    <OL>
+        <LI> Stark difference in policies used by the colonizers – 
+             <OL type="a">
+                     <LI> Setting up of extractive states which not did provide protection for private property or checks against                                 government expropriation and set up for transfer resources from the colony to the ‘home’ state
+                     <LI> Settler of ‘Neo-Europes’ (Alfred Crosby, 1986) placed a strong emphasis on private property and checks                                against excessive government power
+             </OL>
+        <LI> Colonialization policies were determined by feasibility of settlements 
+        <LI> Colonial states and institutions persisted after independence of countries 
+        <LI> Exclusion restriction: Current economic performance does not in any way affected by mortality rates of colonists other     
+           than by way of setting up (and prevalence) of economic institutions
+    </OL>       
+</P>
 
 
 
