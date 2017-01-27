@@ -13,13 +13,6 @@ os.getcwd()
 ```
 
 
-
-
-    'C:\\Users\\Utsav Saksena\\Documents'
-
-
-
-
 ```python
 df=pd.read_stata('data_python.dta')
 df.head()
@@ -129,7 +122,6 @@ df.head()
 
 
 
-
 ```python
 plt.clf () # starts a new graph
 plt.plot(df.avexpr, df.logpgp95, '.', color='red', linewidth=2) # add more feutures
@@ -141,7 +133,7 @@ plt.xlim(0, 10)
     # add lfit and distinguish the dotted line by the characteristic of colonization
 plt.savefig('Graph_10.png')
 ```
-
+<a href="https://github.com/UtsavSaksena/Python/blob/master/Graph10.png"> Click to view </a>
 
 ```python
 plt.clf () # starts a new graph
