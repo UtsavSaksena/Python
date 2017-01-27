@@ -10,10 +10,12 @@ By - <Br>
 Historical processes have played a huge role in determining the state of the world today: both politically and economically. From the late 18th century onwards, imperialism in the form of conquering/setting up of colonies is a good example of such a process. In the literature, the works of <a href="https://econ-papers.upf.edu/papers/202.pdf">Bertocchi and Canova (1996)</a> and <a href="http://faculty-staff.ou.edu/G/Robin.M.Grier-1/colonialism.pdf">Grier (1999)</a> have palced some emphasis on the post-colonial experiences of erstwhile European Colonies, but a breakthrough was obtained with the paper <a href="http://economics.mit.edu/files/4123">‘The Colonial Origins of Comparative Development: An Ecmpircial Investigation’</a> by Acemoglu, Johnson, and Robinson that was published in 2001. 
 
 A truly fascinating read for academics and policy makers alike, it played a crucial role in joining the links of development that were theorized in earlier research, but were not well validated empirically.  It outlines a methodology that explains fundamental causes of large differences in income per capita across countries through the lens of historical data. 
-
 </P>
 
-
+<H3> Theory: </H3>
+<P>
+The economic theory that underlies this model is as follows -  ‘good’ political, financial and legal institutions  are causally associated to more secure property rights & less scope of excessive government intervention. This implies a lower level and likelihood of distortionary policies being implemented. In the form of higher investment in physical and human capital and their efficient use in production leads to higher levels of income (North and Thomas, 1973; Jones, 1981). 
+</P>
 
 
 
