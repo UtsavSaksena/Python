@@ -19,9 +19,123 @@ Briefly, the economic theory that underlies this model is as follows -  ‘good�
 <P>
 In the paper, the authors exploit differences in European mortality rates to estimate the effect of institutions on current economic performance. The ‘chain of causality’ is defined as follows - 
 </P>
-<I> High mortality rates of settlers -> extractive institutions -> Prevalence of institutions -> current state of economic performance </I> 
 
-</P>
+```python
+import graphviz as gv
+g1 = add_edges(
+    add_nodes(digraph(), [
+        ('A', {'label': 'Settler Mortality'}),
+        ('B', {'label': 'Good Institutions'}),
+        ('C', {'label': 'GDP/capita'})
+    ]),
+    [
+        (('A', 'B'), {'label': 'First Stage'}),
+        (('A', 'C'), {'label': 'Exclusion Restriction'}),
+        (('B', 'C'), {'label': 'Second Stage'})
+    ]
+)
+    
+def add_nodes(graph, nodes):
+    for n in nodes:
+        if isinstance(n, tuple):
+            graph.node(n[0], **n[1])
+        else:
+            graph.node(n)
+    return graph
+
+def add_edges(graph, edges):
+    for e in edges:
+        if isinstance(e[0], tuple):
+            graph.edge(*e[0], **e[1])
+        else:
+            graph.edge(*e)
+    return graph
+
+import functools
+graph = functools.partial(gv.Graph, format='svg')
+digraph = functools.partial(gv.Digraph, format='svg')
+
+g1 = add_edges(
+    add_nodes(digraph(), [
+        ('A', {'label': 'Settler Mortality'}),
+        ('B', {'label': 'Good Institutions'}),
+        ('C', {'label': 'GDP/capita'})
+    ]),
+    [
+        (('A', 'B'), {'label': 'First Stage'}),
+        (('A', 'C'), {'label': 'Exclusion Restriction'}),
+        (('B', 'C'), {'label': 'Second Stage'})
+    ]
+)
+
+styles = {
+    'graph': {
+        'fontsize': '16',
+        'rankdir': 'BT',
+    },
+    'nodes': {
+        'fontname': 'Helvetica',
+        'shape': 'square',
+        'fillcolor': '#006699',
+    },
+    'edges': {
+        'style': 'dashed',
+        'arrowhead': 'open',
+        'fontname': 'Courier',
+        'fontsize': '12',
+    }
+}
+
+def apply_styles(graph, styles):
+    graph.graph_attr.update(
+        ('graph' in styles and styles['graph']) or {}
+    )
+    graph.node_attr.update(
+        ('nodes' in styles and styles['nodes']) or {}
+    )
+    graph.edge_attr.update(
+        ('edges' in styles and styles['edges']) or {}
+    )
+    return graph
+
+g1 = apply_styles(g1, styles)
+g1.render('graphic 1')
+```
+
+
+
+
+    'graphic 1.svg'
+
+
+
+
+```python
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <H3>Methodology: </H3> 
