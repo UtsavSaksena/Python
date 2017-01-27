@@ -17,10 +17,8 @@ A truly fascinating read for academics and policy makers alike, it played a cruc
 Briefly, the economic theory that underlies this model is as follows -  ‘good’ political, financial and legal institutions  are causally associated to more secure property rights & less scope of excessive government intervention. This implies a lower level and likelihood of distortionary policies being implemented. In the form of higher investment in physical and human capital and their efficient use in production leads to higher levels of income (<a href="http://www.eh.net/?s=The%20rise%20of%20the%20western%20world">North and Thomas, 1973</a>; <a href="http://www.cambridge.org/nl/academic/subjects/history/global-history/european-miracle-environments-economies-and-geopolitics-history-europe-and-asia-3rd-edition?format=PB&isbn=9780521527835">Jones, 1981</a>). 
 
 <P>
-In the paper, the authors exploit differences in European mortality rates to estimate the effect of institutions on current economic performance. The ‘chain of causality’ is defined as follows - 
+In the paper, the authors exploit differences in European mortality rates to estimate the effect of institutions on current economic performance. The ‘chain of causality’ can be visualised <a href="https://github.com/UtsavSaksena/Python/blob/master/graphic%201.svg"> here</a> - 
 </P>
-
-![ScreenShot](graphic 1.svg)
 
 ```python
 import graphviz as gv
