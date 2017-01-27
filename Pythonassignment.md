@@ -127,9 +127,9 @@ The authors make use of the following assumptions in their estimations -
 
 <H3> Estimation Equation </H3>
 
-```Tex
- Treamtent_i = \alpha + \beta_i  
-```
+
+ \Treamtent_i = \alpha_ + \beta_i  
+
 
 ```python
 import pandas as pd
