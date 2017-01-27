@@ -146,7 +146,7 @@ plt.xlim(0, 8)
     # add lfit and distinguish the dotted line by the characteristic of colonization
 plt.savefig('Graph_20.png')
 ```
-
+<a href="https://github.com/UtsavSaksena/Python/blob/master/Graph20.png"> Click to view </a>
 
 ```python
 # Run regression: logpgp95 avexpr
