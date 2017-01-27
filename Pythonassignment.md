@@ -131,12 +131,17 @@ The authors make use of the following assumptions in their estimations -
 
 <P>
 In this analysis we are going to estimate the Two-Stage Lease Square as shown in the above equations. <BR>
-
 The <B> instrument </B> is the log value of mortality rate of the colonial settlers when the country <I> i </I> was colonised <BR>
 The <B> treatment </B> variable is the index of protection against expropriation - having a value between 0 and 10 for each country and year, with 0 corresponding to the lowest protection level. The average value for each country between 1985 and 1995is used. This is a proxy for the current level of institutional development for each country. <BR>   
-The <B> outcome variable </B> is GDP per capita of each country in year 1995
+The <B> outcome variable </B> is GDP per capita of each country in year 1995. <BR>
+As additional covariates we use 'Absolute value of lattitude from equator' (to control for geographical distribution of countries) and 'European Settler Mortality rate' (to control for health levels of populations).
 </P>
 
+<H3> Data Analysis </H3>
+
+<P>
+In this section, we show main graphs and descriptive statis
+</P>
 ```python
 import pandas as pd
 import numpy as np
