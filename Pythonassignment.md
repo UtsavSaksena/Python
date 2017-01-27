@@ -127,13 +127,9 @@ The authors make use of the following assumptions in their estimations -
 
 <H3> Estimation Equation </H3>
 
-```tex
-\documentclass{article}
-\begin{document}
+<iframe> http://mathurl.com/hra3yxt </iframe>
 
- \Treamtent_i = \alpha_i
-\end{document}  
-```
+
 
 ```python
 import pandas as pd
