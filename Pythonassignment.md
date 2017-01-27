@@ -14,7 +14,7 @@ A truly fascinating read for academics and policy makers alike, it played a cruc
 
 <H3> Theory: </H3>
 <P>
-The economic theory that underlies this model is as follows -  ‘good’ political, financial and legal institutions  are causally associated to more secure property rights & less scope of excessive government intervention. This implies a lower level and likelihood of distortionary policies being implemented. In the form of higher investment in physical and human capital and their efficient use in production leads to higher levels of income (<a href="http://www.eh.net/?s=The%20rise%20of%20the%20western%20world">North and Thomas, 1973</a>; <a href="http://www.cambridge.org/nl/academic/subjects/history/global-history/european-miracle-environments-economies-and-geopolitics-history-europe-and-asia-3rd-edition?format=PB&isbn=9780521527835">Jones, 1981</a>). 
+Briefly, the economic theory that underlies this model is as follows -  ‘good’ political, financial and legal institutions  are causally associated to more secure property rights & less scope of excessive government intervention. This implies a lower level and likelihood of distortionary policies being implemented. In the form of higher investment in physical and human capital and their efficient use in production leads to higher levels of income (<a href="http://www.eh.net/?s=The%20rise%20of%20the%20western%20world">North and Thomas, 1973</a>; <a href="http://www.cambridge.org/nl/academic/subjects/history/global-history/european-miracle-environments-economies-and-geopolitics-history-europe-and-asia-3rd-edition?format=PB&isbn=9780521527835">Jones, 1981</a>). 
 </P>
 
 
