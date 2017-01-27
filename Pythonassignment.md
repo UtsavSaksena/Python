@@ -142,6 +142,7 @@ As additional covariates we use 'Absolute value of lattitude from equator' (to c
 <P>
 In this section, we show some graphs and descriptive statistics. The data has observations from 64 countries. 
 </P>
+
 ```python
 import pandas as pd
 import numpy as np
@@ -299,28 +300,26 @@ df.describe()
  
 
 ```python
-plt.clf () # starts a new graph
-plt.plot(df.avexpr, df.logpgp95, '.', color='red', linewidth=2) # add more feutures
+plt.clf () 
+plt.plot(df.avexpr, df.logpgp95, '.', color='red', linewidth=2)
 plt.title("GDP per capita 1995 vs Expropriation risk", fontsize=15)
 plt.ylabel("$log PPP GDP per capita, 1995, World Bank$", fontsize=10)
 plt.xlabel("$average protection against expropriation risk$", fontsize=10)
 plt.ylim(6, 10)
 plt.xlim(0, 10)
-    # add lfit and distinguish the dotted line by the characteristic of colonization
 plt.savefig('Graph_10.png')
 ```
 
 <P> <a href="https://github.com/UtsavSaksena/Python/blob/master/Graph10.png"> Click here to view </a> </P>
 
 ```python
-plt.clf () # starts a new graph
-plt.plot(df.logem4, df.avexpr, '.', color='blue', linewidth=2) # add more feutures
+plt.clf () 
+plt.plot(df.logem4, df.avexpr, '.', color='blue', linewidth=2) 
 plt.title("Expropriation risk vs Log settler mortalilty", fontsize=15)
 plt.ylabel("$average protection against expropriation risk$", fontsize=10)
 plt.xlabel("$log settler mortalility$", fontsize=10)
 plt.ylim(0, 10)
 plt.xlim(0, 8)
-    # add lfit and distinguish the dotted line by the characteristic of colonization
 plt.savefig('Graph_20.png')
 ```
 <P><a href="https://github.com/UtsavSaksena/Python/blob/master/Graph20.png"> Click here to view </a> </P>
@@ -352,7 +351,6 @@ plotly.offline.iplot({
 <a href="https://plot.ly/~Lhagva_1995/5/"> Click here to view an interactive scatter plot </a>
 
 ```python
-# Run regression: logpgp95 avexpr
 from pandas.stats.api import ols
 reg1=ols(y=df['logpgp95'], x=df['avexpr'])
 reg1
