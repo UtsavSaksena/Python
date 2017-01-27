@@ -291,11 +291,13 @@ These variables can be explained as follows -
 </Table>
 
 <H2> Descriptive Statistics of main variable </H2>
+<P> aaaa <P> 
 
 ```python
 df=pd.read_stata('data_graph.dta')
 df.describe() 
 ```
+
 <P> The Output can be seen <A href="https://github.com/UtsavSaksena/Python/blob/master/Desc%20stats.png">here</A>. </P>
  
 
