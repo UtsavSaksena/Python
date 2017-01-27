@@ -294,6 +294,7 @@ These variables can be explained as follows -
 <P> aaaa <P> 
 
 ```python
+import pandas
 df=pd.read_stata('data_graph.dta')
 df.describe() 
 ```
