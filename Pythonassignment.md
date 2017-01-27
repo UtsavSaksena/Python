@@ -20,6 +20,12 @@ Briefly, the economic theory that underlies this model is as follows -  ‘good�
 In the paper, the authors exploit differences in European mortality rates to estimate the effect of institutions on current economic performance. The ‘chain of causality’ can be visualised <a href="https://github.com/UtsavSaksena/Python/blob/master/graphic%201.svg"> here</a> - 
 </P>
 
+<H3> Data Analysis </H3>
+
+<P>
+We start off with 'eye-balling' the data 
+</P>
+ 
 ```python
 import graphviz as gv
 g1 = add_edges(
