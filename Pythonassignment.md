@@ -290,10 +290,14 @@ These variables can be explained as follows -
     </tbody>
 </Table>
 
-</P>
-
 <H2> Descriptive Statistics of main variable </H2>
+<P> aaaa <P> 
 
+```python
+import pandas
+df=pd.read_stata('data_graph.dta')
+df.describe() 
+```
 
 <P> The Output can be seen <A href="https://github.com/UtsavSaksena/Python/blob/master/Desc%20stats.png">here</A>. </P>
  
@@ -349,14 +353,16 @@ plotly.offline.iplot({
 
 <a href="https://plot.ly/~Lhagva_1995/5/"> Click here to view an interactive scatter plot </a>
 
+<H4> Econometrics Analysis </H4> 
+<P>
+We hypothesize that settler mortality affected settlements; settlements affected early institutions; and early institutions persisted and formed the basis of current institutions.First regression table reports ordinary least-squares (OLS) regressions of log per capita income on the protection against expropriation variable.
+</P>
 ```python
 from pandas.stats.api import ols
 reg1=ols(y=df['logpgp95'], x=df['avexpr'])
 reg1
 ```
-
-
-
+    
     -------------------------Summary of Regression Analysis-------------------------
     
     Formula: Y ~ <x> + <intercept>
@@ -380,21 +386,12 @@ reg1
          intercept     4.7135     0.3695      12.76     0.0000     3.9892     5.4377
     ---------------------------------End of Summary---------------------------------
 
-
-
-
-
 <P>
-As we can perceive from the regression table, the coefficient for the variable avexpr is positive.
-For this model the interpretation of this result is as follows;
-For a unitary increase on average protection against expropriation risk we see that the GDP per
-capita increases by approximately 67%. Even though we see that the average protection against
-expropriation risk is statistically highly significant - to support this we have the high t-statistic
-result and the p-value is zero - we can also say that the results we have obtained in this
-regression are somewhat overestimated. This overestimation is due to the fact that there are
-omitted variables that are relevant for our analysis.
+As we can perceive from the regression table, the coefficient for the variable avexpr is positive. For this model the interpretation of this result is as follow. For a unitary increase on average protection against expropriation risk we see that the GDP per capita increases by approximately 67%. Even though we see that the average protection against expropriation risk is statistically highly significant - to support this we have the high t-statistic result and the p-value is zero - we can also say that the results we have obtained in this regression are somewhat overestimated. This overestimation is due to the fact that there are omitted variables that are relevant for our analysis.
 </P>
-
+<P>
+Second regression table reports ordinary least-squares (OLS) regressions of protection against expropriation on the log value of mortalilty rate of settlers. This regression shows how strongly the instrument variable affects to the treatment variable. 
+</P>
 
 ```python
 # Run regression: avexpr logem4
@@ -428,18 +425,12 @@ reg2
     ---------------------------------End of Summary---------------------------------
 
 <P>
-From the regression above we see that the coefficient is negative. What this means is that, for a 1%
-increase in European Settler mortality rate the average protections against expropriation risk fall
-by approximately 0,63 units. In this situation we should also look at the value given by the 
-R-Square: that 30% of the variation on the average protection against expropriation risk is
-explained by the variable logem4 (European Settler's mortality rate). All in all we have that this
-instrument is sufficiently strong
+From the regression above we see that the coefficient is negative. What this means is that, for a 1% increase in European Settler mortality rate the average protections against expropriation risk fall by approximately 0,63 units. In this situation we should also look at the value given by the  R-Square: that 30% of the variation on the average protection against expropriation risk is explained by the variable logem4 (European Settler's mortality rate). All in all we have that this instrument is sufficiently strong.
 </P>
 
 <P>
 Now we estimate the 2SLS in which we take the fitted values of the variable <I> avexpr </I> and run a regression according to equation (2).
 </P>
-
 ```python
 # Keeping predicted value
 averpx_hat=9.5146-0.6314*df['logem4']
@@ -447,7 +438,6 @@ averpx_hat=9.5146-0.6314*df['logem4']
 reg3=ols(y=df['logpgp95'], x=averpx_hat)
 reg3
 ```
-    
     -------------------------Summary of Regression Analysis-------------------------
     
     Formula: Y ~ <x> + <intercept>
@@ -471,6 +461,16 @@ reg3
          intercept     2.3698     0.7148       3.32     0.0015     0.9687     3.7708
     ---------------------------------End of Summary---------------------------------
 
+<P>
+According to the estimation, for one unit increase on average protection against expropriation risk, the GDP per capita increases approximately 137%. Not only the p-value we obtained is rather small but also the R-Squared is high, with a value of 49% - avexpr_hat explains almost 50% of the variations on the GDP per capita. Having performed the first stage we saw that our instrumental variable (logem4) explains our treatment variable (avexpr) well.
+</P>
+
+<H4> Robustness check: Addtional control variables </H4>
+<P> The validity of our 2SLS estimation in previos regressions depends on the assumption that settler mortality in the past has no direct effect on current economic performance. Although this presumption appears reasonable (at least to us), here we substantiate it further by directly controlling for many of the variables that could plausibly be correlated with both settler mortality and economic outcomes, and checking whether the addition of these variables affects our estimates.
+</P>
+<P>
+In this analysis, we add (1) absolute value of latitude from equator and (2) log value of mortality rate of European settlers. 
+</P>
 ```python
 import numpy as np
 import pandas as pd
@@ -511,8 +511,6 @@ print(lm.summary())
     [2] The condition number is large, 5.01e+03. This might indicate that there are
     strong multicollinearity or other numerical problems.
     
-
-
 ```python
 df=pd.read_stata('data_python.dta')
 avexpr_hat=8.6550-0.5856*df.logem4+2.7581*df.lat_abst+0.0005*df.extmort4
@@ -549,4 +547,6 @@ print(lm.summary())
     [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
     [2] The condition number is large, 8.48e+03. This might indicate that there are
     strong multicollinearity or other numerical problems.
-  
+  <P>
+ As we can see from our regression table, after adding more covariates does not change the estimated parameter of the variable avexpr_hat remarkably. Hence, we can conclude that estimated parameter of the variable avexpr_hat is robust and unbiased. 
+  </P>
