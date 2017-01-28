@@ -551,3 +551,10 @@ print(lm.summary())
   <P>
  As we can see from our regression table, after adding more covariates does not change the estimated parameter of the variable avexpr_hat remarkably. Hence, we can conclude that estimated parameter of the variable avexpr_hat is robust and unbiased. 
   </P>
+
+<H3> Conclusion </H3>
+<P>
+In this assignment, we replicated the attempts of Acemoglu et al using some simple analysis in a python based environment on data from the original paper which can be found <a href="https://github.com/UtsavSaksena/Python/blob/master/rawdata.dta">here</a>. For the most part, our findings were consistent with those of the paper - using the instrumental variable method, we found a strong causal effect on economic performance. To check the robustness of our estimation we added two relevant covariates, which did not affect the estimated paramater of the treatment variables.
+</P> 
+ 
+
