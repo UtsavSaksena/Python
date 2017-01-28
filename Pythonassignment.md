@@ -252,7 +252,6 @@ df.head()
 </table>
 </div>
 
-<P>  
 These variables can be explained as follows - 
 
 <Table border="1" type="dataframe">
@@ -291,7 +290,7 @@ These variables can be explained as follows -
 </Table>
 
 <H2> Descriptive Statistics of main variable </H2>
-<P> aaaa <P> 
+
 
 ```python
 import pandas
