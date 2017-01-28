@@ -1,7 +1,7 @@
 <H1> Applied Economic Analysis - Python Assignment </H1>
 <H2> Topic: Historical Origins of Economic Development </H2>
 
-By - <Br>
+By  <Br>
 <a href="https://github.com/Lkhagvaa-1995"> Lkhagvaa Erdurensen (u810977) </a> <BR>
 <a href="https://github.com/UtsavSaksena"> Utsav Saksena (u629797) </a> 
 
@@ -289,18 +289,14 @@ These variables can be explained as follows -
     </tbody>
 </Table>
 
-<H2> Descriptive Statistics of main variable </H2>
-
-
+<H4> Descriptive Statistics </H4>
 ```python
 import pandas
 df=pd.read_stata('data_graph.dta')
 df.describe() 
 ```
-
 <P> The Output can be seen <A href="https://github.com/UtsavSaksena/Python/blob/master/Desc%20stats.png">here</A>. </P>
  
-
 ```python
 plt.clf () 
 plt.plot(df.avexpr, df.logpgp95, '.', color='red', linewidth=2)
@@ -311,7 +307,6 @@ plt.ylim(6, 10)
 plt.xlim(0, 10)
 plt.savefig('Graph_10.png')
 ```
-
 <P> <a href="https://github.com/UtsavSaksena/Python/blob/master/Graph10.png"> Click here to view </a> </P>
 
 ```python
