@@ -554,7 +554,7 @@ print(lm.summary())
 
 <H3> Conclusion </H3>
 <P>
-In this assignment, we replicated the attempts of Acemoglu et al using some simple analysis in a python based environment on data from the original paper which can be found <a href="https://github.com/UtsavSaksena/Python/blob/master/rawdata.dta">here</a>. For the most part, our findings were consistent with those of the paper - using the instrumental variable method, we found a strong causal effect on economic performance. To check the robustness of our estimation we added two relevant covariates, which did not affect the estimated paramater of the treatment variables.
+In this assignment, we replicated the attempts of Acemoglu et al using some simple analysis in a python based environment on data from the original paper which can be found <a href="https://github.com/UtsavSaksena/Python/blob/master/rawdata.dta">here</a>. For the most part, our findings were consistent with those of the paper. Using the instrumental variable approach, we found a strong causal effect of strength of institutions on economic performance. To check the robustness of our estimation we added two relevant covariates, which did not affect the estimated paramater of the treatment variable.
 </P> 
  
 
