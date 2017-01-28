@@ -114,7 +114,7 @@ In our representation, we seek to test the validity of the use of this variable 
 The authors make use of the following assumptions in their estimations - 
     <OL>
         <LI> Stark difference in policies used by the colonizers – 
-             <OL type="a">
+             <OL> type="a">
                      <LI> Setting up of extractive states which not did provide protection for private property or checks against                                 government expropriation and set up for transfer resources from the colony to the ‘home’ state </LI>
                      <LI> Settler of ‘Neo-Europes’ (<a href="https://books.google.nl/books/about/Ecological_Imperialism.html?                                     id=Phtqa_3tNykC&redir_esc=y">Alfred Crosby, 1986</a>) placed a strong emphasis on private property and checks                           against excessive government power </LI>
              </OL>
@@ -290,13 +290,16 @@ These variables can be explained as follows -
 </Table>
 
 <H4> Descriptive Statistics </H4>
+<P> Here we show the some descriptive statistics of the main varaibles that we use this analysis.
+</P>
 ```python
 import pandas
 df=pd.read_stata('data_graph.dta')
 df.describe() 
 ```
 <P> The Output can be seen <A href="https://github.com/UtsavSaksena/Python/blob/master/Desc%20stats.png">here</A>. </P>
- 
+
+<P> To illustrate the relation between treatment and outcome variables we build several scatter graphs. </P>
 ```python
 plt.clf () 
 plt.plot(df.avexpr, df.logpgp95, '.', color='red', linewidth=2)
@@ -346,6 +349,10 @@ plotly.offline.iplot({
 ```
 
 <a href="https://plot.ly/~Lhagva_1995/5/"> Click here to view an interactive scatter plot </a>
+
+<P> 
+According to the graphs, we see the strong positive relation between the development level of country (which is measured by GDP per capita) and the development level of institution (which is measured by the average protection against expropriation risk). However, it is hard to capture the causal effect of this two factor. 
+</P>
 
 <H4> Econometrics Analysis </H4> 
 <P>
