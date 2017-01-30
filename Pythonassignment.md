@@ -114,7 +114,7 @@ In our representation, we seek to test the validity of the use of this variable 
 The authors make use of the following assumptions in their estimations - 
     <OL>
         <LI> Stark difference in policies used by the colonizers – 
-             <OL> type="a">
+             <OL> 
                      <LI> Setting up of extractive states which not did provide protection for private property or checks against                                 government expropriation and set up for transfer resources from the colony to the ‘home’ state </LI>
                      <LI> Settler of ‘Neo-Europes’ (<a href="https://books.google.nl/books/about/Ecological_Imperialism.html?                                     id=Phtqa_3tNykC&redir_esc=y">Alfred Crosby, 1986</a>) placed a strong emphasis on private property and checks                           against excessive government power </LI>
              </OL>
