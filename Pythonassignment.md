@@ -356,7 +356,7 @@ According to the graphs, we see the strong positive relation between the develop
 
 <H4> Econometrics Analysis </H4> 
 <P>
-We hypothesize that settler mortality affected settlements; settlements affected early institutions; and early institutions persisted and formed the basis of current institutions.First regression table reports ordinary least-squares (OLS) regressions of log per capita income on the protection against expropriation variable.
+We hypothesize that settler mortality affected settlements; settlements affected early institutions; and early institutions persisted and formed the basis of current institutions. First regression table reports ordinary least-squares (OLS) regressions of log per capita income on the protection against expropriation variable.
 </P>
 ```python
 from pandas.stats.api import ols
@@ -388,7 +388,7 @@ reg1
     ---------------------------------End of Summary---------------------------------
 
 <P>
-As we can perceive from the regression table, the coefficient for the variable avexpr is positive. For this model the interpretation of this result is as follow. For a unitary increase on average protection against expropriation risk we see that the GDP per capita increases by approximately 67%. Even though we see that the average protection against expropriation risk is statistically highly significant - to support this we have the high t-statistic result and the p-value is zero - we can also say that the results we have obtained in this regression are somewhat overestimated. This overestimation is due to the fact that there are omitted variables that are relevant for our analysis.
+As we can perceive from the regression table, the coefficient for the variable avexpr is positive. For this model the interpretation of this result is as follow. For a unitary increase on average protection against expropriation risk we see that the GDP per capita increases by approximately 52%. Even though we see that the average protection against expropriation risk is statistically highly significant - to support this we have the high t-statistic result and the p-value is zero - we can also say that the results we have obtained in this regression are somewhat overestimated. This overestimation is due to the fact that there are omitted variables that are relevant for our analysis.
 </P>
 <P>
 Second regression table reports ordinary least-squares (OLS) regressions of protection against expropriation on the log value of mortalilty rate of settlers. This regression shows how strongly the instrument variable affects to the treatment variable. 
