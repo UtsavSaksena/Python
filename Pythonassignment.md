@@ -463,11 +463,11 @@ reg3
     ---------------------------------End of Summary---------------------------------
 
 <P>
-According to the estimation, for one unit increase on average protection against expropriation risk, the GDP per capita increases approximately 137%. Not only the p-value we obtained is rather small but also the R-Squared is high, with a value of 49% - avexpr_hat explains almost 50% of the variations on the GDP per capita. Having performed the first stage we saw that our instrumental variable (logem4) explains our treatment variable (avexpr) well.
+According to the estimation, for one unit increase on average protection against expropriation risk, the GDP per capita increases approximately 87%. Not only the p-value we obtained is rather small but also the R-Squared is high, with a value of 49% - avexpr_hat explains almost 50% of the variations on the GDP per capita. Having performed the first stage we saw that our instrumental variable (logem4) explains our treatment variable (avexpr) well.
 </P>
 
 <H4> Robustness check: Addtional control variables </H4>
-<P> The validity of our 2SLS estimation in previos regressions depends on the assumption that settler mortality in the past has no direct effect on current economic performance. Although this presumption appears reasonable (at least to us), here we substantiate it further by directly controlling for many of the variables that could plausibly be correlated with both settler mortality and economic outcomes, and checking whether the addition of these variables affects our estimates.
+<P> The validity of our 2SLS estimation in previos regressions depends on the assumption that settler mortality in the past has no direct effect on current economic performance. Although this presumption appears reasonable, here we substantiate it further by directly controlling for many of the variables that could plausibly be correlated with both settler mortality and economic outcomes, and checking whether the addition of these variables affects our estimates.
 </P>
 <P>
 In this analysis, we add (1) absolute value of latitude from equator and (2) log value of mortality rate of European settlers. 
@@ -549,7 +549,7 @@ print(lm.summary())
     [2] The condition number is large, 8.48e+03. This might indicate that there are
     strong multicollinearity or other numerical problems.
   <P>
- As we can see from our regression table, after adding more covariates does not change the estimated parameter of the variable avexpr_hat remarkably. Hence, we can conclude that estimated parameter of the variable avexpr_hat is robust and unbiased. 
+ As we can see from our regression table, after adding more covariates does not change the estimated parameter of the variable avexpr_hat remarkably. Hence, we can conclude that estimated parameter of the variable avexpr_hat is robust and unbiased. Again, according to the estimation, for one unit increase on average protection against expropriation risk, the GDP per capita increases approximately 87%. 
   </P>
 
 <H3> Conclusion </H3>
