@@ -549,7 +549,7 @@ print(lm.summary())
     [2] The condition number is large, 8.48e+03. This might indicate that there are
     strong multicollinearity or other numerical problems.
   <P>
- As we can see from our regression table, after adding more covariates does not change the estimated parameter of the variable avexpr_hat remarkably. Hence, we can conclude that estimated parameter of the variable avexpr_hat is robust and unbiased. Again, according to the estimation, for one unit increase on average protection against expropriation risk, the GDP per capita increases approximately 87%. 
+ As we can see from our regression table, after adding more covariates does not change the estimated parameter of the variable avexpr_hat remarkably. Hence, we can conclude that estimated parameter of the variable avexpr_hat is robust and unbiased. Again, according to the estimation, for one unit increase on average protection against expropriation risk, the GDP per capita increases approximately 86%. 
   </P>
 
 <H3> Conclusion </H3>
