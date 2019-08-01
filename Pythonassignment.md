@@ -130,7 +130,7 @@ The authors make use of the following assumptions in their estimations -
 <img src="http://mathurl.com/hra3yxt.png"> 
 
 <P>
-In this analysis we are going to estimate the Two-Stage Lease Square as shown in the above equations. <BR>
+In this analysis we are going to estimate the Two-Stage Lease Squares as shown in the above equations. <BR>
 The <B> instrument </B> is the log value of mortality rate of the colonial settlers when the country <I> i </I> was colonised <BR>
 The <B> treatment </B> variable is the index of protection against expropriation - having a value between 0 and 10 for each country and year, with 0 corresponding to the lowest protection level. The average value for each country between 1985 and 1995is used. This is a proxy for the current level of institutional development for each country. <BR>   
 The <B> outcome variable </B> is GDP per capita of each country in year 1995. <BR>
@@ -292,14 +292,17 @@ These variables can be explained as follows -
 <H4> Descriptive Statistics </H4>
 <P> Here we show the some descriptive statistics of the main varaibles that we use this analysis.
 </P>
+
 ```python
 import pandas
 df=pd.read_stata('data_graph.dta')
 df.describe() 
 ```
+
 <P> The Output can be seen <A href="https://github.com/UtsavSaksena/Python/blob/master/Desc%20stats.png">here</A>. </P>
 
 <P> To illustrate the relation between treatment and outcome variables we build several scatter graphs. </P>
+
 ```python
 plt.clf () 
 plt.plot(df.avexpr, df.logpgp95, '.', color='red', linewidth=2)
@@ -358,6 +361,7 @@ According to the graphs, we see the strong positive relation between the develop
 <P>
 We hypothesize that settler mortality affected settlements; settlements affected early institutions; and early institutions persisted and formed the basis of current institutions. First regression table reports ordinary least-squares (OLS) regressions of log per capita income on the protection against expropriation variable.
 </P>
+
 ```python
 from pandas.stats.api import ols
 reg1=ols(y=df['logpgp95'], x=df['avexpr'])
