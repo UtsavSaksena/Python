@@ -436,6 +436,7 @@ From the regression above we see that the coefficient is negative. What this mea
 <P>
 Now we estimate the 2SLS in which we take the fitted values of the variable <I> avexpr </I> and run a regression according to equation (2).
 </P>
+
 ```python
 # Keeping predicted value
 averpx_hat=9.5146-0.6314*df['logem4']
@@ -443,6 +444,7 @@ averpx_hat=9.5146-0.6314*df['logem4']
 reg3=ols(y=df['logpgp95'], x=averpx_hat)
 reg3
 ```
+
     -------------------------Summary of Regression Analysis-------------------------
     
     Formula: Y ~ <x> + <intercept>
@@ -476,6 +478,7 @@ According to the estimation, for one unit increase on average protection against
 <P>
 In this analysis, we add (1) absolute value of latitude from equator and (2) log value of mortality rate of European settlers. 
 </P>
+
 ```python
 import numpy as np
 import pandas as pd
@@ -483,8 +486,8 @@ import statsmodels.formula.api as smf
 df=pd.read_stata('data_python.dta')
 lm=smf.ols(formula='avexpr ~ logem4 + lat_abst + extmort4', data=df).fit()
 print(lm.summary())
-
 ```
+
 
                                 OLS Regression Results                            
     ==============================================================================
@@ -515,13 +518,16 @@ print(lm.summary())
     [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
     [2] The condition number is large, 5.01e+03. This might indicate that there are
     strong multicollinearity or other numerical problems.
-    
+
+
 ```python
 df=pd.read_stata('data_python.dta')
 avexpr_hat=8.6550-0.5856*df.logem4+2.7581*df.lat_abst+0.0005*df.extmort4
 lm=smf.ols(formula='logpgp95 ~ avexpr_hat + lat_abst + extmort4', data=df).fit()
 print(lm.summary())
 ```
+
+
 
                                 OLS Regression Results                            
     ==============================================================================
